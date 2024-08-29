@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 283580026}
   - component: {fileID: 283580025}
   m_Layer: 0
-  m_Name: PointSpawn5
+  m_Name: SpawnerEnemyLittleSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1221b6d36746d8c47b253df98474fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabEnemy: {fileID: -5968688830119929610, guid: fddd1a64c8e69244494c31c158e36f14, type: 3}
+  _prefabEnemy: {fileID: 0}
+  _enemyType: 0
+  _targetForEnemy: {fileID: 0}
 --- !u!33 &283580025
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -465,7 +467,7 @@ GameObject:
   - component: {fileID: 801803256}
   - component: {fileID: 801803257}
   m_Layer: 0
-  m_Name: LeftSide
+  m_Name: LeftZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +535,7 @@ GameObject:
   - component: {fileID: 899847456}
   - component: {fileID: 899847455}
   m_Layer: 0
-  m_Name: DestroyZone1
+  m_Name: DisplayZone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +640,7 @@ GameObject:
   - component: {fileID: 918446798}
   - component: {fileID: 918446799}
   m_Layer: 0
-  m_Name: ForwardSide
+  m_Name: ForwardZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,7 +800,7 @@ GameObject:
   - component: {fileID: 1154322179}
   - component: {fileID: 1154322178}
   m_Layer: 0
-  m_Name: PointSpawn1
+  m_Name: SpawnerEnemyCapsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,7 +833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1221b6d36746d8c47b253df98474fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabEnemy: {fileID: -5968688830119929610, guid: fddd1a64c8e69244494c31c158e36f14, type: 3}
+  _prefabEnemy: {fileID: 0}
+  _enemyType: 0
+  _targetForEnemy: {fileID: 0}
 --- !u!33 &1154322178
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -895,7 +899,7 @@ GameObject:
   - component: {fileID: 1267665899}
   - component: {fileID: 1267665898}
   m_Layer: 0
-  m_Name: DestroyZone3
+  m_Name: DisplayZone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,7 +1061,7 @@ GameObject:
   - component: {fileID: 1299947344}
   - component: {fileID: 1299947343}
   m_Layer: 0
-  m_Name: PointSpawn3
+  m_Name: SpawnerEnemyLittleCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1221b6d36746d8c47b253df98474fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabEnemy: {fileID: -5968688830119929610, guid: fddd1a64c8e69244494c31c158e36f14, type: 3}
+  _prefabEnemy: {fileID: 0}
+  _enemyType: 0
+  _targetForEnemy: {fileID: 0}
 --- !u!33 &1299947343
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1153,7 +1159,7 @@ GameObject:
   - component: {fileID: 1361439067}
   - component: {fileID: 1361439068}
   m_Layer: 0
-  m_Name: BackSide
+  m_Name: BackZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1789342914}
   m_Layer: 0
-  m_Name: Sides
+  m_Name: DestructiveZones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1256,7 +1262,7 @@ GameObject:
   - component: {fileID: 1815177656}
   - component: {fileID: 1815177655}
   m_Layer: 0
-  m_Name: PointSpawn2
+  m_Name: SpawnerEnemyCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1289,7 +1295,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1221b6d36746d8c47b253df98474fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabEnemy: {fileID: -5968688830119929610, guid: fddd1a64c8e69244494c31c158e36f14, type: 3}
+  _prefabEnemy: {fileID: 0}
+  _enemyType: 0
+  _targetForEnemy: {fileID: 0}
 --- !u!33 &1815177655
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1353,7 +1361,7 @@ GameObject:
   - component: {fileID: 1860553180}
   - component: {fileID: 1860553179}
   m_Layer: 0
-  m_Name: DestroyZone2
+  m_Name: DisplayZone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1458,7 +1466,7 @@ GameObject:
   - component: {fileID: 2033661951}
   - component: {fileID: 2033661952}
   m_Layer: 0
-  m_Name: RightSide
+  m_Name: RightZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1526,7 +1534,7 @@ GameObject:
   - component: {fileID: 2046998323}
   - component: {fileID: 2046998322}
   m_Layer: 0
-  m_Name: DestroyZone4
+  m_Name: DisplayZone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1632,7 +1640,7 @@ GameObject:
   - component: {fileID: 2066941561}
   - component: {fileID: 2066941560}
   m_Layer: 0
-  m_Name: PointSpawn4
+  m_Name: SpawnerEnemySphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1665,7 +1673,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1221b6d36746d8c47b253df98474fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefabEnemy: {fileID: -5968688830119929610, guid: fddd1a64c8e69244494c31c158e36f14, type: 3}
+  _prefabEnemy: {fileID: 0}
+  _enemyType: 0
+  _targetForEnemy: {fileID: 0}
 --- !u!33 &2066941560
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class ControllerSpawners : MonoBehaviour
 
     private bool _canSpawning;
     private Spawner _currentSpawner;
-    private WaitForSecondsRealtime _wait;
+    private WaitForSeconds _wait;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class ControllerSpawners : MonoBehaviour
     private void Initialize()
     {
         _canSpawning = true;
-        _wait = new WaitForSecondsRealtime(_delaySpawn);
+        _wait = new WaitForSeconds(_delaySpawn);
     }
 
     private IEnumerator SpawnEnemies()

@@ -15,8 +15,8 @@ public class Spawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        Enemy enemy = Instantiate(_prefabEnemy, transform.position, GenerateRotation());
-        enemy.SetColor(_renderer.material.color);
+        Enemy enemy = Instantiate(_prefabEnemy, transform.position, Quaternion.identity);
+        enemy.Initialize(GenerateRotation(), _renderer.material.color);
     }
 
     private Quaternion GenerateRotation()

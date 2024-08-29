@@ -21,12 +21,13 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Enemy enemy))
         {
-            Destroy(enemy.gameObject);
+            Physics.IgnoreCollision(gameObject.GetComponent<Collider>(), enemy.gameObject.GetComponent<Collider>());
         }
     }
 
-    public void SetColor(Color color)
+    public void Initialize(Quaternion rotation, Color color)
     {
+        transform.rotation = rotation;
         _renderer.material.color = color;
     }
 }
